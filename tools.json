@@ -4,7 +4,6 @@
     "tools": [
       {
         "name": "PFS 管理仪表板",
-        "description": "查看公司损益、预算达成和净边贡，定位渠道与品项表现。",
         "url": "https://pfs-profitability-dashboard-z7duq2zptvrvgpnyxxxaux.streamlit.app/",
         "rules": [
           "公司层损益、预算和营运净利采用损益简表。渠道、区域和品项下钻采用经营明细，两块指标的范围和调整项可能不同。",
@@ -14,7 +13,6 @@
       },
       {
         "name": "PFS 销售数据看板",
-        "description": "跟踪销量、销额和同比变化，按区域、渠道查阅销售数据。",
         "url": "https://jctvyto9ztmvzjnbddgajy.streamlit.app/",
         "rules": [
           "先选月份，再按区域、渠道或品类查看销量、销额和净边贡。比较两期时保持筛选条件一致。",
@@ -29,7 +27,6 @@
     "tools": [
       {
         "name": "PVM 肉品产值",
-        "description": "查看日度与月累计产值、产成率，以及主副产品表现。",
         "url": "https://appall-4475zkls3dq5y3dhtntxud.streamlit.app/",
         "rules": [
           "按工厂和生产日查看当日及本月至今结果，可下钻至主产品、副产品和部位。",
@@ -39,7 +36,6 @@
       },
       {
         "name": "肉品日报KPI汇总",
-        "description": "集中查看肉品日报的关键指标。",
         "url": "https://summary-czuub3blbl6yabrujhaa5j.streamlit.app/",
         "rules": [
           "可上传多份肉品日报 Excel。每份文件从首个工作表读取带有「日期」表头的核心指标。",
@@ -54,7 +50,6 @@
     "tools": [
       {
         "name": "系统成本表",
-        "description": "对比各厂单位成本，查看采购、利用率、损耗和人工影响。",
         "url": "https://system-cost-mea6ngypgyfea8bzivzyv3.streamlit.app/",
         "rules": [
           "按工厂和物料对比本期与基期成本，查看采购单价、修形利用率、损耗和人工等影响。",
@@ -64,7 +59,6 @@
       },
       {
         "name": "鲜冻品占比表",
-        "description": "按工厂、部位和规格查看鲜冻原料耗用结构。",
         "url": "https://kmtmedwwux6eriutevamhj.streamlit.app/",
         "rules": [
           "按工厂、部位和规格查看鲜冻原料的耗用量与占比。跨期比较时核对两期纳入的物料范围。",
@@ -74,7 +68,6 @@
       },
       {
         "name": "标准与实际成本对比",
-        "description": "查看产品实际成本与标准成本的偏差，定位重点改善项。",
         "url": "https://cost-meeting-reports-vij4jwcovoavmnvu8o8rq6.streamlit.app/",
         "rules": [
           "按工厂与物料号匹配来源成本。成本差额为实际成本减标准成本，偏差率为成本差额除以标准成本。",

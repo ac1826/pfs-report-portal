@@ -14,37 +14,30 @@ st.set_page_config(page_title=TITLE, layout="wide")
 
 def render_tool(tool):
     name = escape(tool["name"])
-    description = escape(tool["description"])
     url = tool.get("url")
-    if url:
-        target = urlsplit(url)
-        if target.scheme != "https" or not target.hostname:
-            raise ValueError(f"{name} 的链接需为完整的 HTTPS 地址")
-        action = (
-            f'<a class="portal-action" href="{escape(url, quote=True)}" '
-            f'target="_blank" rel="noopener noreferrer" aria-label="打开{name}（新标签页）">'
-            '打开工具 <span aria-hidden="true">↗</span></a>'
-        )
-    else:
-        action = '<span class="portal-pending">链接待补</span>'
+    if not url:
+        return f'<li class="report-row pending">{name}<span>链接待补</span></li>'
 
+    target = urlsplit(url)
+    if target.scheme != "https" or not target.hostname:
+        raise ValueError(f"{tool['name']} 的链接需为完整的 HTTPS 地址")
     return (
-        '<li class="portal-tool">'
-        f'<div class="portal-tool-copy"><h3>{name}</h3><p>{description}</p></div>'
-        f'{action}</li>'
+        f'<li><a class="report-row" href="{escape(url, quote=True)}" '
+        'target="_blank" rel="noopener noreferrer" aria-description="在新标签页打开">'
+        f'{name}<span aria-hidden="true">↗</span></a></li>'
     )
 
 
 def render_group(group):
     group_name = escape(group["name"])
     tools = "".join(render_tool(tool) for tool in group["tools"])
-    return f'<section class="portal-group"><h2>{group_name}</h2><ul>{tools}</ul></section>'
+    return f'<section><h2>{group_name}</h2><ul class="reports">{tools}</ul></section>'
 
 
 def render_rules(tool):
     rules = "".join(f"<li>{escape(rule)}</li>" for rule in tool["rules"])
     return (
-        f'<details class="portal-rule"><summary>{escape(tool["name"])}</summary>'
+        f'<details><summary>{escape(tool["name"])}</summary>'
         f"<ul>{rules}</ul></details>"
     )
 
@@ -56,16 +49,12 @@ style = (APP_DIR / "style.css").read_text(encoding="utf-8")
 
 st.html(f"""
 <style>{style}</style>
-<main class="portal">
-  <header class="portal-header">
-    <p>经营管理</p>
-    <h1>{TITLE}</h1>
-    <p>按业务分类查找报表和分析工具。</p>
-  </header>
-  <div class="portal-groups">{groups}</div>
-  <section class="portal-rules" aria-labelledby="portal-rules-title">
+<div class="portal">
+  <h1>{TITLE}</h1>
+  <nav aria-label="报表入口">{groups}</nav>
+  <section class="rules" aria-labelledby="portal-rules-title">
     <h2 id="portal-rules-title">报表规则</h2>
-    <div class="portal-rule-documents">{rule_documents}</div>
+    {rule_documents}
   </section>
-</main>
+</div>
 """)
