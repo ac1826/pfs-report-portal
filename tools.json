@@ -1,0 +1,47 @@
+[
+  {
+    "name": "经营看板",
+    "tools": [
+      {
+        "name": "PFS 管理仪表板",
+        "description": "查看公司损益、预算达成和净边贡，定位渠道与品项表现。",
+        "url": "https://pfs-profitability-dashboard-z7duq2zptvrvgpnyxxxaux.streamlit.app/"
+      },
+      {
+        "name": "PFS 销售数据看板",
+        "description": "跟踪销量、销额和同比变化，按区域、渠道查阅销售数据。",
+        "url": "https://jctvyto9ztmvzjnbddgajy.streamlit.app/"
+      }
+    ]
+  },
+  {
+    "name": "生产分析",
+    "tools": [
+      {
+        "name": "PVM 肉品产值",
+        "description": "查看日度与月累计产值、产成率，以及主副产品表现。",
+        "url": "https://appall-4475zkls3dq5y3dhtntxud.streamlit.app/"
+      }
+    ]
+  },
+  {
+    "name": "成本分析",
+    "tools": [
+      {
+        "name": "系统成本表",
+        "description": "对比各厂单位成本，查看采购、利用率、损耗和人工影响。",
+        "url": null
+      },
+      {
+        "name": "鲜冻品占比表",
+        "description": "按工厂、部位和规格查看鲜冻原料耗用结构。",
+        "url": null
+      },
+      {
+        "name": "标准与实际成本对比",
+        "description": "查看产品实际成本与标准成本的偏差，定位重点改善项。",
+        "url": null
+      }
+    ]
+  }
+]
