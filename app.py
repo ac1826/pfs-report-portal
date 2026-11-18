@@ -41,8 +41,17 @@ def render_group(group):
     return f'<section class="portal-group"><h2>{group_name}</h2><ul>{tools}</ul></section>'
 
 
+def render_rules(tool):
+    rules = "".join(f"<li>{escape(rule)}</li>" for rule in tool["rules"])
+    return (
+        f'<details class="portal-rule"><summary>{escape(tool["name"])}</summary>'
+        f"<ul>{rules}</ul></details>"
+    )
+
+
 catalog = json.loads((APP_DIR / "tools.json").read_text(encoding="utf-8"))
 groups = "".join(render_group(group) for group in catalog)
+rule_documents = "".join(render_rules(tool) for group in catalog for tool in group["tools"])
 style = (APP_DIR / "style.css").read_text(encoding="utf-8")
 
 st.html(f"""
@@ -54,5 +63,9 @@ st.html(f"""
     <p>按业务分类查找报表和分析工具。</p>
   </header>
   <div class="portal-groups">{groups}</div>
+  <section class="portal-rules" aria-labelledby="portal-rules-title">
+    <h2 id="portal-rules-title">报表规则</h2>
+    <div class="portal-rule-documents">{rule_documents}</div>
+  </section>
 </main>
 """)

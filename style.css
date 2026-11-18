@@ -60,7 +60,8 @@
     grid-row: 1 / span 2;
 }
 
-.portal-group h2 {
+.portal-group h2,
+.portal-rules h2 {
     margin: 0 0 .75rem;
     padding: 0 0 .125rem;
     color: #264c43;
@@ -140,6 +141,47 @@
     background: #edf2ed;
     border-radius: .35rem;
     font-size: .8rem;
+}
+
+.portal-rules {
+    margin-top: 2rem;
+}
+
+.portal-rule-documents {
+    background: #fff;
+    border: 1px solid #dce5de;
+    border-radius: .8rem;
+}
+
+.portal-rule + .portal-rule {
+    border-top: 1px solid #e3ebe4;
+}
+
+.portal-rule summary {
+    min-height: 2.9rem;
+    padding: .75rem 1.15rem;
+    color: #264c43;
+    font-size: .96rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.portal-rule summary:hover,
+.portal-rule[open] summary {
+    background: #eff5ef;
+}
+
+.portal-rule summary:focus-visible {
+    outline: 2px solid #247d65;
+    outline-offset: -3px;
+}
+
+.portal-rule ul {
+    margin: .4rem 0 .85rem;
+    padding: 0 1.15rem 0 2.55rem;
+    color: #4c635a;
+    font-size: .92rem;
+    line-height: 1.65;
 }
 
 @media (max-width: 850px) {
