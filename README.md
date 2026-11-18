@@ -1,6 +1,6 @@
 # 报表与模型入口
 
-点击报表名称，在新标签页打开原应用。各报表的口径说明位于页面底部。
+点击报表名称，在新标签页打开原应用。
 
 ## 本地运行
 
@@ -13,7 +13,7 @@ python -m streamlit run app.py
 
 ## 维护工具链接
 
-入口和规则统一维护于 `tools.json`。每个工具包含名称 `name`、HTTPS 地址 `url` 和规则列表 `rules`。暂时没有地址时，将 `url` 设为 `null`。本地保存后刷新门户。
+入口维护于 `tools.json`。每个工具包含名称 `name` 和 HTTPS 地址 `url`。暂时没有地址时，将 `url` 设为 `null`。本地保存后刷新门户。
 
 ## 部署到 Streamlit Community Cloud
 

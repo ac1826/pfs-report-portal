@@ -4,21 +4,11 @@
     "tools": [
       {
         "name": "PFS 管理仪表板",
-        "url": "https://pfs-profitability-dashboard-z7duq2zptvrvgpnyxxxaux.streamlit.app/",
-        "rules": [
-          "公司层损益、预算和营运净利采用损益简表。渠道、区域和品项下钻采用经营明细，两块指标的范围和调整项可能不同。",
-          "前 20 大客户按所选期间的本期销额排序。同比比较同一合并客户及上年相同月份。",
-          "客户净边贡率按合计净边贡除以合计净收入计算。两期净边贡率相减，差额用百分点表示。"
-        ]
+        "url": "https://pfs-profitability-dashboard-z7duq2zptvrvgpnyxxxaux.streamlit.app/"
       },
       {
         "name": "PFS 销售数据看板",
-        "url": "https://jctvyto9ztmvzjnbddgajy.streamlit.app/",
-        "rules": [
-          "先选月份，再按区域、渠道或品类查看销量、销额和净边贡。比较两期时保持筛选条件一致。",
-          "同比对比本期与上年相同月份。客户排名按明确的客户合并关系归集。",
-          "销售看板与 PFS 管理仪表板的电商及独立调整项范围存在差异，跨看板对数时先核对口径。"
-        ]
+        "url": "https://jctvyto9ztmvzjnbddgajy.streamlit.app/"
       }
     ]
   },
@@ -27,21 +17,11 @@
     "tools": [
       {
         "name": "PVM 肉品产值",
-        "url": "https://appall-4475zkls3dq5y3dhtntxud.streamlit.app/",
-        "rules": [
-          "按工厂和生产日查看当日及本月至今结果，可下钻至主产品、副产品和部位。",
-          "部位产成率按该部位产量除以对应毛鸡净重计算。单位产值按元/kg 展示。",
-          "出现缺活重、价格缺失或产品结构还原时，结合报表提示复核，再做跨厂或跨期比较。"
-        ]
+        "url": "https://appall-4475zkls3dq5y3dhtntxud.streamlit.app/"
       },
       {
         "name": "肉品日报KPI汇总",
-        "url": "https://summary-czuub3blbl6yabrujhaa5j.streamlit.app/",
-        "rules": [
-          "可上传多份肉品日报 Excel。每份文件从首个工作表读取带有「日期」表头的核心指标。",
-          "月产成与产值细项优先读取组合还原后的月累计总览，缺失时读取本月至今累计或月累计表。",
-          "城市含税单价对有效明细按产量加权。比对城市或工厂时，先核对日报的期间和累计截止日。"
-        ]
+        "url": "https://summary-czuub3blbl6yabrujhaa5j.streamlit.app/"
       }
     ]
   },
@@ -50,30 +30,15 @@
     "tools": [
       {
         "name": "系统成本表",
-        "url": "https://system-cost-mea6ngypgyfea8bzivzyv3.streamlit.app/",
-        "rules": [
-          "按工厂和物料对比本期与基期成本，查看采购单价、修形利用率、损耗和人工等影响。",
-          "单位成本差异与总影响金额使用不同单位。阅读时核对表头、比较期和对应的产量口径。",
-          "新增物料或缺少有效基期时，先检查可比性，再判断成本变化。"
-        ]
+        "url": "https://system-cost-mea6ngypgyfea8bzivzyv3.streamlit.app/"
       },
       {
         "name": "鲜冻品占比表",
-        "url": "https://kmtmedwwux6eriutevamhj.streamlit.app/",
-        "rules": [
-          "按工厂、部位和规格查看鲜冻原料的耗用量与占比。跨期比较时核对两期纳入的物料范围。",
-          "鲜冻占比依据对应范围内的已分类耗用量比较。遇到未分类、无耗用或缺基期时，检查分母和可比性。",
-          "讨论鲜冻替代效果时，同时查看采购价差、行情、利用率、损耗和人工影响。"
-        ]
+        "url": "https://kmtmedwwux6eriutevamhj.streamlit.app/"
       },
       {
         "name": "标准与实际成本对比",
-        "url": "https://cost-meeting-reports-vij4jwcovoavmnvu8o8rq6.streamlit.app/",
-        "rules": [
-          "按工厂与物料号匹配来源成本。成本差额为实际成本减标准成本，偏差率为成本差额除以标准成本。",
-          "标准成本为零或缺失时，偏差率留空。MKA 产品偏差率绝对值超过 5% 时高亮。",
-          "成本会议结合单位成本差额与产量判断影响，复核后再记录原因和改善动作。"
-        ]
+        "url": "https://cost-meeting-reports-vij4jwcovoavmnvu8o8rq6.streamlit.app/"
       }
     ]
   }
