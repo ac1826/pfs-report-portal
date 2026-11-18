@@ -21,6 +21,11 @@
         "name": "PVM 肉品产值",
         "description": "查看日度与月累计产值、产成率，以及主副产品表现。",
         "url": "https://appall-4475zkls3dq5y3dhtntxud.streamlit.app/"
+      },
+      {
+        "name": "肉品日报KPI汇总",
+        "description": "集中查看肉品日报的关键指标。",
+        "url": "https://summary-czuub3blbl6yabrujhaa5j.streamlit.app/"
       }
     ]
   },
@@ -30,17 +35,17 @@
       {
         "name": "系统成本表",
         "description": "对比各厂单位成本，查看采购、利用率、损耗和人工影响。",
-        "url": null
+        "url": "https://system-cost-mea6ngypgyfea8bzivzyv3.streamlit.app/"
       },
       {
         "name": "鲜冻品占比表",
         "description": "按工厂、部位和规格查看鲜冻原料耗用结构。",
-        "url": null
+        "url": "https://kmtmedwwux6eriutevamhj.streamlit.app/"
       },
       {
         "name": "标准与实际成本对比",
         "description": "查看产品实际成本与标准成本的偏差，定位重点改善项。",
-        "url": null
+        "url": "https://cost-meeting-reports-vij4jwcovoavmnvu8o8rq6.streamlit.app/"
       }
     ]
   }

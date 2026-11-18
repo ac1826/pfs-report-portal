@@ -11,9 +11,9 @@ python -m pip install -r requirements.txt
 python -m streamlit run app.py
 ```
 
-## 补充成本工具链接
+## 维护工具链接
 
-打开 `tools.json`，找到相应工具，将其 `"url": null` 改为带引号的完整 HTTPS 地址。保存后刷新门户。已有的工具地址也在同一文件维护。
+在 `tools.json` 中按分类添加工具或更新现有工具的 HTTPS 地址。暂时没有地址时，将 `url` 设为 `null`，门户会显示「链接待补」。本地保存后刷新门户。
 
 ## 部署到 Streamlit Community Cloud
 
