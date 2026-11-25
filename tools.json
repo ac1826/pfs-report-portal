@@ -1,18 +1,5 @@
 [
   {
-    "name": "经营看板",
-    "tools": [
-      {
-        "name": "PFS 管理仪表板",
-        "url": "https://pfs-profitability-dashboard-z7duq2zptvrvgpnyxxxaux.streamlit.app/"
-      },
-      {
-        "name": "PFS 销售数据看板",
-        "url": "https://jctvyto9ztmvzjnbddgajy.streamlit.app/"
-      }
-    ]
-  },
-  {
     "name": "生产分析",
     "tools": [
       {
